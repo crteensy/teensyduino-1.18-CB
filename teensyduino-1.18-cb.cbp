@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="teensy3.x-1.18-cb" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_armnoneeabi" />
+		<Build>
+			<Target title="Teensy3.0">
+				<Option output="bin/Teensy3.0/teensyduino-1.18-cb-teensy3.0.elf" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/Teensy3.0/" />
+				<Option type="1" />
+				<Option compiler="gnu_armnoneeabi" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-D__MK20DX128__" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Tmk20dx128.ld" />
+				</Linker>
+			</Target>
+			<Target title="Teensy3.1">
+				<Option output="bin/Teensy3.1/teensyduino-1.18-cb-teensy3.1.elf" prefix_auto="1" extension_auto="0" />
+				<Option object_output="obj/Teensy3.1/" />
+				<Option type="1" />
+				<Option compiler="gnu_armnoneeabi" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-D__MK20DX256__" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Tmk20dx256.ld" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="arduino_tools" value="/home/buffi/builds/arduino/arduino-1.0.5/hardware/tools" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-mthumb" />
+			<Add option="-Wall" />
+			<Add option="-mcpu=cortex-m4" />
+			<Add option="-MMD" />
+			<Add option="-nostdlib" />
+			<Add option="-std=gnu++0x" />
+			<Add option="-felide-constructors" />
+			<Add option="-fno-exceptions" />
+			<Add option="-fno-rtti" />
+			<Add option="-ffunction-sections" />
+			<Add option="-fdata-sections" />
+			<Add option="-DF_CPU=48000000" />
+			<Add option="-DUSB_SERIAL" />
+			<Add option="-DLAYOUT_US_ENGLISH" />
+			<Add option="-DARDUINO=104" />
+			<Add option="-DTEENSYDUINO=118" />
+			<Add directory="." />
+			<Add directory="teensy3" />
+		</Compiler>
+		<Linker>
+			<Add option="-Os" />
+			<Add option="-Wl,--gc-sections" />
+			<Add option="-Wl,--cref" />
+			<Add option="-Wl,-Map=${TARGET_OUTPUT_DIR}${TARGET_OUTPUT_BASENAME}.map" />
+			<Add option="-mcpu=cortex-m4" />
+			<Add option="-mthumb" />
+			<Add directory="teensy3" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="arm-none-eabi-size ${TARGET_OUTPUT_FILE}" />
+			<Add after="arm-none-eabi-objcopy -O ihex -R .eeprom ${TARGET_OUTPUT_FILE} ${TARGET_OUTPUT_DIR}${TARGET_OUTPUT_BASENAME}.hex" />
+			<Add after="arm-none-eabi-objdump -d ${TARGET_OUTPUT_FILE} &gt; ${TARGET_OUTPUT_DIR}${TARGET_OUTPUT_BASENAME}.lst" />
+			<Add after="$(arduino_tools)/teensy_post_compile -file=${TARGET_OUTPUT_BASENAME} -path=${PROJECT_DIR}${TARGET_OUTPUT_DIR} -tools=$(arduino_tools)" />
+			<Add after="$(arduino_tools)/teensy_reboot" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="main.cpp" />
+		<Unit filename="teensy3/Arduino.h" />
+		<Unit filename="teensy3/AudioStream.cpp" />
+		<Unit filename="teensy3/AudioStream.h" />
+		<Unit filename="teensy3/Client.h" />
+		<Unit filename="teensy3/HardwareSerial.h" />
+		<Unit filename="teensy3/HardwareSerial1.cpp" />
+		<Unit filename="teensy3/HardwareSerial2.cpp" />
+		<Unit filename="teensy3/HardwareSerial3.cpp" />
+		<Unit filename="teensy3/IPAddress.cpp" />
+		<Unit filename="teensy3/IPAddress.h" />
+		<Unit filename="teensy3/IntervalTimer.cpp" />
+		<Unit filename="teensy3/IntervalTimer.h" />
+		<Unit filename="teensy3/Print.cpp" />
+		<Unit filename="teensy3/Print.h" />
+		<Unit filename="teensy3/Printable.h" />
+		<Unit filename="teensy3/SPIFIFO.h" />
+		<Unit filename="teensy3/Server.h" />
+		<Unit filename="teensy3/Stream.cpp" />
+		<Unit filename="teensy3/Stream.h" />
+		<Unit filename="teensy3/Tone.cpp" />
+		<Unit filename="teensy3/Udp.h" />
+		<Unit filename="teensy3/WCharacter.h" />
+		<Unit filename="teensy3/WConstants.h" />
+		<Unit filename="teensy3/WMath.cpp" />
+		<Unit filename="teensy3/WProgram.h" />
+		<Unit filename="teensy3/WString.cpp" />
+		<Unit filename="teensy3/WString.h" />
+		<Unit filename="teensy3/analog.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/arm_common_tables.h" />
+		<Unit filename="teensy3/arm_math.h" />
+		<Unit filename="teensy3/avr/eeprom.h" />
+		<Unit filename="teensy3/avr/interrupt.h" />
+		<Unit filename="teensy3/avr/io.h" />
+		<Unit filename="teensy3/avr/pgmspace.h" />
+		<Unit filename="teensy3/avr_emulation.cpp" />
+		<Unit filename="teensy3/avr_emulation.h" />
+		<Unit filename="teensy3/avr_functions.h" />
+		<Unit filename="teensy3/binary.h" />
+		<Unit filename="teensy3/core_cm4.h" />
+		<Unit filename="teensy3/core_cm4_simd.h" />
+		<Unit filename="teensy3/core_cmInstr.h" />
+		<Unit filename="teensy3/core_id.h" />
+		<Unit filename="teensy3/core_pins.h" />
+		<Unit filename="teensy3/eeprom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/elapsedMillis.h" />
+		<Unit filename="teensy3/keylayouts.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/keylayouts.h" />
+		<Unit filename="teensy3/math_helper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/math_helper.h" />
+		<Unit filename="teensy3/mk20dx128.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/mk20dx128.h" />
+		<Unit filename="teensy3/mk20dx128.ld" />
+		<Unit filename="teensy3/mk20dx256.ld" />
+		<Unit filename="teensy3/new.cpp" />
+		<Unit filename="teensy3/new.h" />
+		<Unit filename="teensy3/nonstd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/pins_arduino.h" />
+		<Unit filename="teensy3/pins_teensy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/serial1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/serial2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/serial3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/touch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_desc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_desc.h" />
+		<Unit filename="teensy3/usb_dev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_dev.h" />
+		<Unit filename="teensy3/usb_flightsim.cpp" />
+		<Unit filename="teensy3/usb_flightsim.h" />
+		<Unit filename="teensy3/usb_inst.cpp" />
+		<Unit filename="teensy3/usb_joystick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_joystick.h" />
+		<Unit filename="teensy3/usb_keyboard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_keyboard.h" />
+		<Unit filename="teensy3/usb_mem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_mem.h" />
+		<Unit filename="teensy3/usb_midi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_midi.h" />
+		<Unit filename="teensy3/usb_mouse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_mouse.h" />
+		<Unit filename="teensy3/usb_names.h" />
+		<Unit filename="teensy3/usb_rawhid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_rawhid.h" />
+		<Unit filename="teensy3/usb_seremu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_seremu.h" />
+		<Unit filename="teensy3/usb_serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="teensy3/usb_serial.h" />
+		<Unit filename="teensy3/util/atomic.h" />
+		<Unit filename="teensy3/util/delay.h" />
+		<Unit filename="teensy3/wiring.h" />
+		<Unit filename="teensy3/wiring_private.h" />
+		<Unit filename="teensy3/yield.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

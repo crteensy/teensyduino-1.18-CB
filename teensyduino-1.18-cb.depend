@@ -1,0 +1,347 @@
+# depslib dependency file v1.0
+1398815094 source:/home/buffi/builds/git/teensyduino-1.18-CB/main.cpp
+	<WProgram.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/WProgram.h
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	<avr/pgmspace.h>
+	<avr/interrupt.h>
+	"avr_functions.h"
+	"wiring.h"
+	"HardwareSerial.h"
+	"avr_emulation.h"
+	"usb_serial.h"
+	"usb_seremu.h"
+	"usb_keyboard.h"
+	"usb_mouse.h"
+	"usb_joystick.h"
+	"usb_midi.h"
+	"usb_rawhid.h"
+	"usb_flightsim.h"
+	"WString.h"
+	"elapsedMillis.h"
+	"IntervalTimer.h"
+	"pins_arduino.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/avr/pgmspace.h
+	<inttypes.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/avr/interrupt.h
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/avr_functions.h
+	<inttypes.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/wiring.h
+	<stdint.h>
+	<stdlib.h>
+	"binary.h"
+	"core_id.h"
+	"core_pins.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/binary.h
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/core_id.h
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/core_pins.h
+	"mk20dx128.h"
+	"pins_arduino.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/mk20dx128.h
+	<stdint.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/pins_arduino.h
+	<stdint.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/HardwareSerial.h
+	"mk20dx128.h"
+	<inttypes.h>
+	"Stream.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/Stream.h
+	<inttypes.h>
+	"Print.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/Print.h
+	<inttypes.h>
+	<stdio.h>
+	<stdarg.h>
+	"core_id.h"
+	"WString.h"
+	"Printable.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/WString.h
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"avr_functions.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/Printable.h
+	"new.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/avr_emulation.h
+	"mk20dx128.h"
+	"core_pins.h"
+	"pins_arduino.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_serial.h
+	<inttypes.h>
+	"Stream.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_seremu.h
+	<inttypes.h>
+	"Stream.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_keyboard.h
+	"keylayouts.h"
+	<inttypes.h>
+	"Stream.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/keylayouts.h
+	<stdint.h>
+	<avr/pgmspace.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_mouse.h
+	<inttypes.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_joystick.h
+	<inttypes.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_midi.h
+	<inttypes.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_rawhid.h
+	<inttypes.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_flightsim.h
+	<inttypes.h>
+	"elapsedMillis.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/elapsedMillis.h
+	"Arduino.h"
+	"WProgram.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/Arduino.h
+	"WProgram.h"
+	"pins_arduino.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/IntervalTimer.h
+	<stdint.h>
+	"mk20dx128.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/AudioStream.cpp
+	"AudioStream.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/AudioStream.h
+	"Arduino.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/HardwareSerial1.cpp
+	"HardwareSerial.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/HardwareSerial2.cpp
+	"HardwareSerial.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/HardwareSerial3.cpp
+	"HardwareSerial.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/IPAddress.cpp
+	"Arduino.h"
+	"IPAddress.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/IPAddress.h
+	<Printable.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/IntervalTimer.cpp
+	"IntervalTimer.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/Print.cpp
+	<inttypes.h>
+	"Print.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/Stream.cpp
+	"Arduino.h"
+	"Stream.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/Tone.cpp
+	"core_pins.h"
+	"pins_arduino.h"
+	"HardwareSerial.h"
+	"IntervalTimer.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/WMath.cpp
+	<stdint.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/WString.cpp
+	"WString.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/analog.c
+	"core_pins.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/avr_emulation.cpp
+	"avr_emulation.h"
+	"SPIFIFO.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/eeprom.c
+	"mk20dx128.h"
+	<stdint.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/keylayouts.c
+	<avr/pgmspace.h>
+	<stdint.h>
+	"keylayouts.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/math_helper.c
+	<math.h>
+	"math_helper.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/math_helper.h
+	"arm_math.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/arm_math.h
+	<stdint.h>
+	"core_cmInstr.h"
+	"core_cm4_simd.h"
+	"core_cm4.h"
+	"core_cm3.h"
+	"core_cm0.h"
+	"ARMCM4.h"
+	"string.h"
+	"math.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/core_cmInstr.h
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/core_cm4_simd.h
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/core_cm4.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+	<core_cm4_simd.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/mk20dx128.c
+	"mk20dx128.h"
+	<sys/stat.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/new.cpp
+	"new.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/new.h
+	<stdlib.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/nonstd.c
+	"avr_functions.h"
+	<string.h>
+	<stdio.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/pins_teensy.c
+	"core_pins.h"
+	"pins_arduino.h"
+	"HardwareSerial.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/serial1.c
+	"mk20dx128.h"
+	"core_pins.h"
+	"HardwareSerial.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/serial2.c
+	"mk20dx128.h"
+	"core_pins.h"
+	"HardwareSerial.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/serial3.c
+	"mk20dx128.h"
+	"core_pins.h"
+	"HardwareSerial.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/touch.c
+	"core_pins.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_desc.c
+	"usb_desc.h"
+	"usb_names.h"
+	"mk20dx128.h"
+	"avr_functions.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_desc.h
+	<stdint.h>
+	<stddef.h>
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_names.h
+	<stdint.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_dev.c
+	"mk20dx128.h"
+	"usb_dev.h"
+	"usb_mem.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_dev.h
+	"usb_mem.h"
+	"usb_desc.h"
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_mem.h
+	<stdint.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_flightsim.cpp
+	"usb_dev.h"
+	"usb_flightsim.h"
+	"core_pins.h"
+	<string.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_inst.cpp
+	"WProgram.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_joystick.c
+	"usb_dev.h"
+	"usb_joystick.h"
+	"core_pins.h"
+	"HardwareSerial.h"
+	<string.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_keyboard.c
+	"usb_dev.h"
+	"usb_keyboard.h"
+	"core_pins.h"
+	"keylayouts.h"
+	<string.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_mem.c
+	"mk20dx128.h"
+	"usb_dev.h"
+	"usb_mem.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_midi.c
+	"usb_dev.h"
+	"usb_midi.h"
+	"core_pins.h"
+	"HardwareSerial.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_mouse.c
+	"usb_dev.h"
+	"usb_mouse.h"
+	"core_pins.h"
+	"HardwareSerial.h"
+	<string.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_rawhid.c
+	"usb_dev.h"
+	"usb_rawhid.h"
+	"core_pins.h"
+	<string.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_seremu.c
+	"usb_dev.h"
+	"usb_seremu.h"
+	"core_pins.h"
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/usb_serial.c
+	"usb_dev.h"
+	"usb_serial.h"
+	"core_pins.h"
+	<string.h>
+
+1398814497 source:/home/buffi/builds/git/teensyduino-1.18-CB/teensy3/yield.c
+
+1398814497 /home/buffi/builds/git/teensyduino-1.18-CB/teensy3/SPIFIFO.h
+	"avr_emulation.h"
+
