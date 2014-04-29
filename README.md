@@ -20,7 +20,7 @@ The compiler used by this project must be known to C::B, or your ARM compiler mu
 ----------
 It's possible to use the Teensy loader from within C::B, but it's not quite as convenient as in the arduino IDE.
 
-  1) Create a global variable named "arduino_tools", and set its value to be your arduino-1.0.5/hardware/tools directory.
+  1) Create a global variable named "arduino_tools" in "Settings->Global Variables->User-defined fields", and set its value to be your arduino-1.0.5/hardware/tools directory.
   
   2) Create a tool called "Teensy Loader" in C::B's tools menu. Settings:
      - Name: "Teensy Loader"
@@ -29,7 +29,7 @@ It's possible to use the Teensy loader from within C::B, but it's not quite as c
      
      You need to start this tool before you want to program your Teensy for the first time in the current C::B session. It will remain open and available until you close it.
      
-Once you have compiled your code, the Teensy Loader will automatically download it. This is configured in the project's Pre/Post build steps.
+Once you have compiled your code, the Teensy Loader will automatically download it. This is already configured in the project's Pre/Post build steps.
 
 2) Available Targets
 --------------------
