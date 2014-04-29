@@ -16,21 +16,6 @@ The compiler used by this project must be known to C::B, or your ARM compiler mu
 
   2) If you already have a correctly configured compiler, select it in the project settings (Build options...->Selected Compiler).
 
-1.2) Tools
-----------
-It's possible to use the Teensy loader from within C::B, but it's not quite as convenient as in the arduino IDE.
-
-  1) Create a global variable named "arduino_tools" in "Settings->Global Variables->User-defined fields", and set its value to be your arduino-1.0.5/hardware/tools directory.
-  
-  2) Create a tool called "Teensy Loader" in C::B's tools menu. Settings:
-     - Name: "Teensy Loader"
-     - Executable: $(arduino_tools)/teensy
-     - Launching Options: Launch tool visible detached
-     
-     You need to start this tool before you want to program your Teensy for the first time in the current C::B session. It will remain open and available until you close it.
-     
-Once you have compiled your code, the Teensy Loader will automatically download it. This is already configured in the project's Pre/Post build steps.
-
 2) Available Targets
 --------------------
 The available targets are:
@@ -38,8 +23,10 @@ The available targets are:
   - Teensy3.1 builds in release mode for the Teensy 3.1.
 They only differ in the linker script used.
 
-
 Enhancements
 ------------
 - Includes static initialization fix from post #9 in this forum thread: http://forum.pjrc.com/threads/25385-static-local-variables-aren-t-static
-- Includes an extended linker script that provides access to the MK20DX128 peripherals by providing a symbol that points to their base addresses
+
+Planned Enhancements
+--------------------
+- Include an extended linker script that provides access to the MK20DX128 and MK20DX256 peripherals by providing a symbol that points to their base address
